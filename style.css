@@ -25,6 +25,8 @@ body {
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    font-size: 14px;
+    background-color: #f5f5f5;
 }
 
 
@@ -32,3 +34,134 @@ h1 {
     font-weight: 500;
 }
 
+/*celý velký box*/
+
+.zbozi {
+    /* Ten box se mi tímto doprostřed neposouvá...proč???
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    width: 670px;
+    height: 440px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+/* Levá polovina, barevná*/
+
+.vizual {
+    background-image: linear-gradient(#06d7c1, #50cc49); 
+    padding: 30px;
+    color: white;
+    width: 335px;
+    height: 440px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 5px 5px 5px #959595;
+}
+
+.cenovka {
+    position: relative;
+    bottom: 80px;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.bota {
+    position: relative;
+    left: -110px;
+}
+
+.cenovka {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*Pravá polovina, bílá */
+
+.detaily {
+    padding: 30px;
+    background-color: white;
+    width: 335px;
+    height: 440px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 5px #959595;
+    position: relative;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.produkt {
+    color: #959595;
+}
+
+.popis {
+    padding-bottom: 30px;
+    border-color: white;
+    border-bottom: #06d7c1;
+    border-style: solid;
+    margin: 0;
+}
+
+.parametr {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.velikosti {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px;
+}
+
+.velikosti li:hover {
+    color: #f15f42;
+    border-color: #f15f42;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 7px
+    /*Jak to udělat, aby hoover nebyl dolů 
+    ale v rovině ostatních čísel? */
+}
+
+.akce {
+    padding: 10px 20px;
+    background-color: #f15f42;
+    border-radius: 5px;
+    width: 112px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.tlacitko {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.akce:hover {
+    background-color: #ef2f08;
+}
