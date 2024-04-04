@@ -37,11 +37,6 @@ h1 {
 /*celý velký box*/
 
 .zbozi {
-    /* Ten box se mi tímto doprostřed neposouvá...proč???
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    */
     width: 670px;
     height: 440px;
     display: flex;
@@ -51,7 +46,6 @@ h1 {
     right: 0;
     left: 0;
     margin: auto;
-
 }
 
 /* Levá polovina, barevná*/
@@ -137,14 +131,16 @@ h1 {
     padding: 10px;
 }
 
+.velikosti li {
+    padding: 7px;
+    /*Toto chybělo! Díky, teď už se hover neposouvá... */
+}
+
 .velikosti li:hover {
     color: #f15f42;
     border-color: #f15f42;
     border-radius: 50%;
     border-style: solid;
-    padding: 7px
-    /*Jak to udělat, aby hoover nebyl dolů 
-    ale v rovině ostatních čísel? */
 }
 
 .akce {
