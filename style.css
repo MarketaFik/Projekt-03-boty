@@ -133,7 +133,6 @@ h1 {
 
 .velikosti li {
     padding: 7px;
-    /*Toto chybělo! Díky, teď už se hover neposouvá... */
 }
 
 .velikosti li:hover {
